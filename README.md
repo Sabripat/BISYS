@@ -14,5 +14,5 @@
 
 - **Frontend:** HTML, CSS, JavaScript
 - **Backend:** Python
-- **Base de Datos:** [Especificar base de datos, si la hay]
+- **Base de Datos:** MySql
 - **Control de Versiones:** Git
