@@ -1,0 +1,145 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #56AC6F;
+    margin: 0;
+    padding: 0;
+    color: #ffffff;
+}
+
+header {
+    background-color: #000000;
+    padding: 1px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo img {
+    max-height: 1px;
+}
+
+header img {
+    width: 250px; /* Ajusta este valor según el tamaño deseado */
+    height: auto; /* Mantiene la proporción del logo */
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 1rem;
+    float: left;
+}
+
+nav ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+    background-color: #111;
+}
+
+main {
+    text-align: center; /* Centra el texto y los botones dentro del main */
+    padding: 20px;
+
+}
+
+.boton {
+    display: inline-block;
+    background-color: #8CA050;
+    color: white;
+    padding: 1rem 2rem;
+    margin: 0.5rem;
+    text-decoration: none;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+    font-size: 1rem;
+}
+
+.button-group {
+    display: flex;
+    justify-content: center;
+    gap: 30px; /* Espacio entre los botones */
+}
+
+.menu-button {
+    background-color: #8CA050;
+    color: white;
+    width: 150px; /* Tamaño fijo del botón */
+    height: 150px; /* Tamaño fijo del botón (igual al ancho para hacerlo cuadrado) */
+    font-size: 1.2em; /* Tamaño del texto dentro del botón */
+    border: none;
+    border-radius: 15px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-align: center; /* Centra el texto dentro del botón */
+}
+
+.menu-button:hover {
+    background-color: #56AC6F;
+}
+footer {
+    background-color: #333;
+    color: #FFF;
+    text-align: center;
+    padding: 1px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Styles for button-container with buttons */
+.button-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px; /* Espacio entre las filas de botones */
+}
+
+button {
+    background-color: #8CA050;
+    color: white;
+    border: none;
+    padding: 2rem 2rem;
+    border-radius: 15px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+    font-size: 1rem;
+    cursor: pointer;
+    outline: none;
+}
+
+button:hover {
+    background-color: #7b8e40;
+}
+h1 {
+    color: #000000; /* Color verde especificado */
+    font-size: 2.5em; /* Tamaño de fuente ajustable */
+    margin: 0;
+    padding: 10px 0;
+}
+.logo {
+    width: 200px;
+    height: auto;
+}
+
+.title {
+    font-size: 36px;
+    color: #56AC6F;
+}
