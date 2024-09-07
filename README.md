@@ -12,42 +12,45 @@
 
 ## Diseño de la Interfaz
 
-### Paleta de colores
+### Paleta de Colores
 - **Verde Principal:** #56AC6F
 - **Verde Secundario:** #8CA050
 - **Negro:** #000000
+- **Blanco:** #FFFFFF
+- **Gris Oscuro (Footer):** #333333
 
 ### Tipografía
-- **Fuente:** [Especificar la fuente a utilizar]
+- **Fuente Principal:** Arial, sans-serif
 - **Tamaños de fuente:**
-  - Títulos: 24px
-  - Subtítulos: 18px
-  - Texto regular: 16px
+  - **Títulos (h1):** 2.5em
+  - **Título de página (title):** 36px
+  - **Texto de botones:** 1rem
+  - **Texto regular:** 1rem
 
-### Diseño del logo
+### Diseño del Logo
 - **Ubicación:** Margen superior izquierdo
-- **Tamaño:** 100x50px
+- **Tamaño:** 200xauto (ajustado en el CSS)
 
-### Menú estático
+### Menú Estático
 - **Ubicación:** Parte superior de la página
-- **Enlaces:** 
+- **Enlaces:**
   - Home
   - Gestión de Usuario
   - Iniciar Sesión
+- **Estilo de Enlaces:**
+  - Color de texto: Blanco
+  - Fondo al pasar el cursor: #111
 
-### Botones del cuerpo de la página
-- **Estilo:** Botones cuadrados, del mismo tamaño, con sombra.
-- **Secciones:**
-  - Caño
-  - Producto
-  - Scrap
-  - Orden de Producción
-  - Orden de Trabajo
-  - Reportes
+### Botones del Cuerpo de la Página
+- **Estilo:**
+  - **Botones Generales:** Fondo #8CA050, texto blanco, padding 1rem 2rem, bordes redondeados, sombra
+  - **Botones del Menú:** Tamaño fijo de 150x150px, texto centrado, borde redondeado de 15px, sombra, transición de color al pasar el cursor
+  - **Botones al pasar el cursor:** Fondo #56AC6F
 
-### Pie de página
+### Pie de Página
 - **Texto:** Copyright Bisys - Desarrollado por G12
 - **Ubicación:** Parte inferior de la página
+- **Estilo:** Fondo gris oscuro (#333333), texto blanco
 
 ## Tecnologías Utilizadas
 
