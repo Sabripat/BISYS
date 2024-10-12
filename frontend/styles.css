@@ -9,7 +9,7 @@ body {
 
 header {
     background-color: #000000;
-    padding: 1px;
+    padding: 0.1px; /* Ajusta el padding para hacer el header más angosto */
     color: white;
     display: flex;
     justify-content: space-between;
@@ -17,7 +17,7 @@ header {
 }
 
 header .logo img {
-    max-height: 1px;
+    max-height: 0.5px;
 }
 
 header img {
@@ -44,6 +44,8 @@ nav ul li a {
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+    font-weight: bold; /* Pone el texto en negrita */
+    font-size: 1.2rem; /* Aumenta el tamaño de la fuente */
 }
 
 nav ul li a:hover {
@@ -54,7 +56,6 @@ nav ul li a:hover {
 main {
     text-align: center; /* Centra el texto y los botones dentro del main */
     padding: 20px;
-
 }
 
 .boton {
@@ -80,7 +81,8 @@ main {
     color: white;
     width: 150px; /* Tamaño fijo del botón */
     height: 150px; /* Tamaño fijo del botón (igual al ancho para hacerlo cuadrado) */
-    font-size: 1.2em; /* Tamaño del texto dentro del botón */
+    font-size: 1.5em; /* Aumenta el tamaño del texto dentro del botón */
+    font-weight: bold; /* Pone el texto en negrita */
     border: none;
     border-radius: 15px;
     box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.5);
@@ -90,11 +92,13 @@ main {
     cursor: pointer;
     transition: background-color 0.3s ease;
     text-align: center; /* Centra el texto dentro del botón */
+    text-decoration: none; /* Quita el subrayado */
 }
 
 .menu-button:hover {
     background-color: #56AC6F;
 }
+
 footer {
     background-color: #333;
     color: #FFF;
@@ -119,21 +123,25 @@ button {
     border: none;
     padding: 2rem 2rem;
     border-radius: 15px;
-    box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
-    font-size: 1rem;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    font-size: 1.5rem; /* Aumenta el tamaño de los botones */
+    font-weight: bold; /* Hace el texto en negrita */
     cursor: pointer;
     outline: none;
+    text-decoration: none; /* Quita el subrayado */
 }
 
 button:hover {
     background-color: #7b8e40;
 }
+
 h1 {
     color: #000000; /* Color verde especificado */
     font-size: 2.5em; /* Tamaño de fuente ajustable */
     margin: 0;
     padding: 10px 0;
 }
+
 .logo {
     width: 200px;
     height: auto;
@@ -141,5 +149,86 @@ h1 {
 
 .title {
     font-size: 36px;
-    color: #56AC6F;
+    color: #7b8e40;
 }
+
+/* Dropdown Menu Styles */
+/* Estilos para el menú desplegable */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropbtn {
+    float: left; /* Mantiene "Iniciar Sesión" a la izquierda */
+    margin-right: 10px; /* Añade espacio entre el texto y las tres líneas */
+}
+
+.menu-icon {
+    cursor: pointer;
+    font-size: 24px;
+    display: inline-block;
+    vertical-align: middle; /* Alinea el ícono verticalmente con el texto */
+    margin-left: 5px; /* Añade un pequeño espacio entre "Iniciar Sesión" y el ícono */
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #7b8e40;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    z-index: 1;
+    border-radius: 10px; /* Esquinas redondeadas */
+    font-size: 15px;
+    
+}
+/* Mostrar el menú cuando se hace clic */
+.show {
+    display: flex;
+}
+/* Estilos para la información del usuario */
+.user-info {
+    text-align: left; /* Alinea el texto a la izquierda */
+    padding: 10px; /* Espaciado alrededor de la información del usuario */
+}
+
+.user-info img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-right: 5px;
+    margin-left: 20px;
+}
+/* Estilos para los enlaces del menú */
+.dropdown-content ul {
+    list-style-type: none;
+    padding: 0;
+}
+.dropdown-content.show {
+    display: block; /* Muestra el menú al activarse */
+}
+
+.dropdown-content ul li {
+    margin-bottom: 10px;
+}
+
+
+
+.dropdown-content ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Estilos para la sección izquierda */
+.left-section {
+    flex: 1; /* Ocupa espacio proporcional */
+}
+
+.action-box {
+    border: 1px solid black; /* Borde negro */
+    padding: 5px; /* Espaciado dentro del cuadrado */
+    border-radius: 5px; /* Esquinas redondeadas */
+    background-color: #ffffff31; /* Color de fondo del cuadrado */
+    font-size: small;
+}
+
+

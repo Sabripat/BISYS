@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bisys</title>
+    <link rel="icon" href="../images/logo.png">
+    <link rel="stylesheet" href="../styles.css"> <!-- Vincula el archivo CSS -->
+</head>
+
+<body>
+    <!-- Header -->
+    <!-- Header -->
+    <!-- Header -->
+    <header>
+        <img src="../images/horizontal.png" alt="Logo de Bisys" class="logo">
+        <nav>
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./gestion_usuarios.html">Gestión de Usuario</a></li>
+                <!-- Menú desplegable junto a Iniciar Sesión -->
+                <li class="dropdown">
+                    <a href="./iniciar_sesion.html" class="dropbtn">Iniciar Sesión</a>
+                    <!-- Icono de menú de 3 líneas -->
+                    <div class="menu-icon" onclick="toggleDropdown()">☰</div>
+                    <!-- Menú desplegable -->
+                    <div id="dropdown-content" class="dropdown-content">
+                        
+                        <div class="right-section">
+                            <div class="user-info">
+                                <p><strong>Rol:</strong> Administrador</p>
+                                <img src="../images/user.jpg" alt="Imagen del usuario">
+                            </div>
+                        </div>
+                        <div class="left-section"></div>
+                            <div class="action-box">
+                                <p class="action-title">Cambiar contraseña</p>
+                                <p class="action-title">Cerrar sesión</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+
+    <main>
+        <h1 style="font-family: Arial Black, sans-serif;">Bicicletas Enrique</h1>
+        <br><br>
+        <section class="buttons-container">
+            <div class="button-group">
+                <a class="menu-button" href="./caño.html">Caño</a>
+                <a class="menu-button" href="./Producto.html">Producto</a>
+                <a class="menu-button" href="./Scrap.html">Scrap</a>
+            </div>
+            <br><br><br>
+            <div class="button-group">
+                <a class="menu-button" href="./OrdenDeProduccion.html">Orden de Producción</a>
+                <a class="menu-button" href="./OrdenDeTrabajo.html">Orden de Trabajo</a>
+                <a class="menu-button" href="./Reportes.html">Reportes</a>
+            </div>
+            <br>
+            <br><br><br>
+        </section>
+        </div>
+    </main>
+    <br><br><br><br><br>
+    <!-- Footer -->
+    <footer>
+        <p>© Bisys - Desarrollado por G12</p>
+    </footer>
+
+    <script>
+        function toggleDropdown() {
+            var dropdown = document.getElementById("dropdown-content");
+            dropdown.classList.toggle("show");
+        }
+    </script>
+
+
+
+</body>
+
+</html>
